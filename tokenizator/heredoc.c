@@ -101,7 +101,7 @@ int	take_heredoc(char **aux_cmd, char **cmd_sp, char *aux, t_data *data)
 	fd = 0;
 	i = 1;
 	i = aux_take(aux_cmd, cmd_sp, &fd, data);
-	aux = NULL;
+	(void)aux;
 	if (i == 0)
 		return (0);
 	if (find_heredir(cmd_arg_quottes(*aux_cmd, data), 0, 0) == -1)

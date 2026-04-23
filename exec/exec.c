@@ -79,9 +79,7 @@ void	exec_pipes(t_pipe *list, t_data *data)
 {
 	t_pipe	*next;
 	int		pipe_fd[2];
-	int		bultins;
 
-	bultins = 0;
 	if (pipe(pipe_fd) < 0)
 	{
 		perror("minishell: PIPE error\n");

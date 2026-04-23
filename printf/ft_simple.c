@@ -28,11 +28,6 @@ static void	ft_dec(const char *format, va_list a_list, t_flags *fl)
 
 static void	ft_specifier_triple(const char *format, va_list a_list, t_flags *fl)
 {
-	int	i;
-	int	j;
-
-	i = 0;
-	j = 2;
 	if (format[fl->o] == 'X')
 		fl->str = ft_itoa_base_x((unsigned long)va_arg(a_list, void *), 16);
 	else if (format[fl->o] == 'x')

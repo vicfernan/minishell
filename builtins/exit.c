@@ -34,9 +34,6 @@ int	exit_args(char **argv)
 
 void	my_exit(char **argv, t_data *data)
 {
-	int	i;
-
-	i = -1;
 	if (argv[1])
 	{
 		if (!exit_args(argv))
